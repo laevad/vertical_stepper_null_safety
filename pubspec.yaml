@@ -1,7 +1,10 @@
 name: vertical_stepper_null_safety
-description: A new Flutter package project.
+description: Vertical Stepper - null safety.
 version: 0.0.1
+maintainer: laevad (@laevad)
 homepage: https://github.com/laevad/vertical_stepper_null_safety
+repository: https://github.com/laevad/vertical_stepper_null_safety/
+issue_tracker: https://github.com/laevad/vertical_stepper_null_safety/issues
 
 environment:
   sdk: '>=2.18.0 <3.0.0'
