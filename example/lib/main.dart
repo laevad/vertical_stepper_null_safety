@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'package:example/vertical_stepper.dart' as step;
-import 'vertical_stepper.dart';
+import 'package:vertical_stepper_null_safety/vertical_stepper_null_safety.dart'
+    as step;
 
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -13,7 +12,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     //Create a list of stepper
 
-    List<step.Step> stepper = [
+    List<step.Step> _stepper = [
       step.Step(
         shimmer: false,
         title: "first",
@@ -74,8 +73,8 @@ class HomePage extends StatelessWidget {
     return Scaffold(
         body: Padding(
       padding: const EdgeInsets.fromLTRB(10, 130, 10, 2),
-      child: VerticalStepper(
-        steps: stepper,
+      child: step.VerticalStepper(
+        steps: _stepper,
         dashLength: 2,
       ),
     ));
